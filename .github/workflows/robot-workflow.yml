@@ -30,7 +30,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run API Load Tests for Booking User Flow
+      - name: Run Robot Framework Tests for Booking User Flow
         env:
           TOKEN_URL: ${{ secrets.TOKEN_URL }}
           HOST_URL: ${{ secrets.HOST_URL }}
@@ -38,7 +38,7 @@ jobs:
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
         run: |
           mkdir -p reports
-          robot --outputdir reports .\tests\lemax-api-e2e-test.robot
+          robot --outputdir reports tests/lemax-api-e2e-test.robot
           echo "Robot tests completed."
           ls -la reports/
         continue-on-error: true 
@@ -47,7 +47,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v3
         with:
-          name: locust-report
+          name: robot-report
           path: reports/  # Upload the entire reports directory
 
   deploy:
@@ -62,7 +62,7 @@ jobs:
       - name: Download Report Artifact
         uses: actions/download-artifact@v3
         with:
-          name: locust-report
+          name: robot-report
           path: ./reports  # Download to the reports directory
 
       - name: Deploy to GitHub Pages
