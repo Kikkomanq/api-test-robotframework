@@ -25,7 +25,6 @@ Initialize Authorization Process
     Set Suite Variable    ${TOKEN}    ${token}
     Set Suite Variable    ${BASE_URL}    ${base_url}
     Log    Bearer Token obtained.
-    Log To Console    ${BASE_URL}
     # Set up headers
     ${HEADERS}=    Create Dictionary
     ...    Authorization=Bearer ${TOKEN}
@@ -42,10 +41,8 @@ User gets tours details from /tours endpoint
 
 Response is with expected value
     ${value}=    Get Value From Json    ${response.json()}    $.tours[0].name
-    Log To Console    Tour Name: ${value}
     Should Be Equal As Strings    France Highlights Tour    ${value}[0]
     ${value}=    Get Value From Json    ${response.json()}    $.tours[0].code
-    Log To Console    Tour Code: ${value}
     Should Be Equal As Strings    FR-3456    ${value}[0]
 
 I get the tour ID and Option ID
@@ -63,9 +60,6 @@ I get the tour ID and Option ID
     Set Test Variable    ${tour_id}
     Set Test Variable    ${options_id}
     Set Test Variable    ${shoppingCartReference}
-    Log To Console    ${tour_id}
-    Log To Console    ${options_id}
-    Log To Console    ${shoppingCartReference}
 
 I send tour ID and Option ID
     ${response}=    GET On Session    api_session    /v1/tours/${tour_id}/options/${options_id}
@@ -80,8 +74,6 @@ ShoppingCartReference is present as test data
     ${json_content}=    Load Json From File    ${json_path}
     # ${cartReference}=    Get Value From Json    ${json_content}    $.items[0].reference
     Set Test Variable    ${json_content}
-
-    Log To Console    ${json_content}
 
 I send booking refereference to cart endpoint
     ${response}=    POST On Session
