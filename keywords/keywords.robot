@@ -8,6 +8,7 @@ Library     Collections
 
 *** Variables ***
 ${BASE_URL}
+${base_url}
 ${response}
 ${tour_id}
 ${options_id}
