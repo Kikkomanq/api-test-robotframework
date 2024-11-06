@@ -1,206 +1,206 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.10.15 on linux)" generated="2024-11-06T16:24:09.109987" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.10.15 on linux)" generated="2024-11-06T16:31:54.032657" rpa="false" schemaversion="5">
 <suite id="s1" name="Lemax-Api-E2E-Test" source="/home/runner/work/api-test-robotframework/api-test-robotframework/tests/lemax-api-e2e-test.robot">
 <kw name="Initialize Authorization Process" owner="keywords" type="SETUP">
 <kw name="Get Bearer Token" owner="TokenLibrary">
-<msg time="2024-11-06T16:24:09.702520" level="INFO">${token} = eyJraWQiOiJWNzJuV1ZnaEo5bFhPK0R6cmNMS3pnbGNqT0RnM0psckpoN0hhMUN0XC9kWT0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIzazg5YzVhM2Q5c2xpdjQwNWlmb2doMHVpMyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY3VzdG9tLWNsYWltc1w...</msg>
-<msg time="2024-11-06T16:24:09.702597" level="INFO">${base_url} = None</msg>
+<msg time="2024-11-06T16:31:54.786664" level="INFO">${token} = eyJraWQiOiJWNzJuV1ZnaEo5bFhPK0R6cmNMS3pnbGNqT0RnM0psckpoN0hhMUN0XC9kWT0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIzazg5YzVhM2Q5c2xpdjQwNWlmb2doMHVpMyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY3VzdG9tLWNsYWltc1w...</msg>
+<msg time="2024-11-06T16:31:54.786742" level="INFO">${base_url} = None</msg>
 <var>${token}</var>
 <var>${base_url}</var>
-<status status="PASS" start="2024-11-06T16:24:09.297023" elapsed="0.405601"/>
+<status status="PASS" start="2024-11-06T16:31:54.209847" elapsed="0.576922"/>
 </kw>
 <kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-11-06T16:24:09.703137" level="INFO">${TOKEN} = eyJraWQiOiJWNzJuV1ZnaEo5bFhPK0R6cmNMS3pnbGNqT0RnM0psckpoN0hhMUN0XC9kWT0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIzazg5YzVhM2Q5c2xpdjQwNWlmb2doMHVpMyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY3VzdG9tLWNsYWltc1w...</msg>
+<msg time="2024-11-06T16:31:54.787293" level="INFO">${TOKEN} = eyJraWQiOiJWNzJuV1ZnaEo5bFhPK0R6cmNMS3pnbGNqT0RnM0psckpoN0hhMUN0XC9kWT0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIzazg5YzVhM2Q5c2xpdjQwNWlmb2doMHVpMyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY3VzdG9tLWNsYWltc1w...</msg>
 <arg>${TOKEN}</arg>
 <arg>${token}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-11-06T16:24:09.702854" elapsed="0.000328"/>
+<status status="PASS" start="2024-11-06T16:31:54.787000" elapsed="0.000340"/>
 </kw>
 <kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-11-06T16:24:09.703490" level="INFO">${BASE_URL} = None</msg>
+<msg time="2024-11-06T16:31:54.787656" level="INFO">${BASE_URL} = None</msg>
 <arg>${BASE_URL}</arg>
 <arg>${base_url}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-11-06T16:24:09.703304" elapsed="0.000225"/>
+<status status="PASS" start="2024-11-06T16:31:54.787466" elapsed="0.000230"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-11-06T16:24:09.703750" level="INFO">Bearer Token obtained.</msg>
+<msg time="2024-11-06T16:31:54.787917" level="INFO">Bearer Token obtained.</msg>
 <arg>Bearer Token obtained.</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-11-06T16:24:09.703636" elapsed="0.000156"/>
+<status status="PASS" start="2024-11-06T16:31:54.787805" elapsed="0.000155"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${BASE_URL}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-11-06T16:24:09.703895" elapsed="0.000177"/>
+<status status="PASS" start="2024-11-06T16:31:54.788065" elapsed="0.000178"/>
 </kw>
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2024-11-06T16:24:09.704634" level="INFO">${HEADERS} = {'Authorization': 'Bearer eyJraWQiOiJWNzJuV1ZnaEo5bFhPK0R6cmNMS3pnbGNqT0RnM0psckpoN0hhMUN0XC9kWT0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIzazg5YzVhM2Q5c2xpdjQwNWlmb2doMHVpMyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb...</msg>
+<msg time="2024-11-06T16:31:54.788889" level="INFO">${HEADERS} = {'Authorization': 'Bearer eyJraWQiOiJWNzJuV1ZnaEo5bFhPK0R6cmNMS3pnbGNqT0RnM0psckpoN0hhMUN0XC9kWT0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIzazg5YzVhM2Q5c2xpdjQwNWlmb2doMHVpMyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb...</msg>
 <var>${HEADERS}</var>
 <arg>Authorization=Bearer ${TOKEN}</arg>
 <arg>Content-Type=application/json</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2024-11-06T16:24:09.704254" elapsed="0.000408"/>
+<status status="PASS" start="2024-11-06T16:31:54.788452" elapsed="0.000469"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-11-06T16:24:09.704916" level="INFO">Headers set: {'Authorization': 'Bearer eyJraWQiOiJWNzJuV1ZnaEo5bFhPK0R6cmNMS3pnbGNqT0RnM0psckpoN0hhMUN0XC9kWT0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIzazg5YzVhM2Q5c2xpdjQwNWlmb2doMHVpMyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY3VzdG9tLWNsYWltc1wvdG91ciBjdXN0b20tY2xhaW1zXC9ib29raW5nIiwiYXV0aF90aW1lIjoxNzMwOTEwMjQ5LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtY2VudHJhbC0xLmFtYXpvbmF3cy5jb21cL2V1LWNlbnRyYWwtMV9uRnQ5eEk0SVAiLCJleHAiOjE3MzA5MTM4NDksImlhdCI6MTczMDkxMDI0OSwidmVyc2lvbiI6MiwianRpIjoiMTNlMjk3NjMtYzQ1MS00Y2YwLWFlZjgtOTBlN2RlMzM3NDE4IiwiY2xpZW50X2lkIjoiM2s4OWM1YTNkOXNsaXY0MDVpZm9naDB1aTMifQ.VyiPUnHs6Hf2HRd_cftcaouFIPfnTk9X6lIIn4jnqr919F0tsmhjaNbKFLHTVl7J3Vh9kBCin1e-kB1f4ea7zmU7LGza1zdenl6feVF9SDCpXTXYqv58FFd6cvU9WOy7_dPVa0mUMH9nmg803v2oZO3O8Y27SRXCpDVd39b7ZZ3oqcjYQw4Ff3rCTGTaYMR96tWry45uoNhps6KCE5cGkGXfhv_U_QJ9euA_qWgjkT0Ix7Qq7q17wcLFmcL95RXcB6o7pE3VXnOVs5jRPdui2L9r9P03f89eGmOErZliJFGScQjO6prx7dOScNrwdTwNmEoIzK1qcRLmGXj8QVP6bw', 'Content-Type': 'application/json'}</msg>
+<msg time="2024-11-06T16:31:54.789188" level="INFO">Headers set: {'Authorization': 'Bearer eyJraWQiOiJWNzJuV1ZnaEo5bFhPK0R6cmNMS3pnbGNqT0RnM0psckpoN0hhMUN0XC9kWT0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIzazg5YzVhM2Q5c2xpdjQwNWlmb2doMHVpMyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY3VzdG9tLWNsYWltc1wvdG91ciBjdXN0b20tY2xhaW1zXC9ib29raW5nIiwiYXV0aF90aW1lIjoxNzMwOTEwNzE0LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtY2VudHJhbC0xLmFtYXpvbmF3cy5jb21cL2V1LWNlbnRyYWwtMV9uRnQ5eEk0SVAiLCJleHAiOjE3MzA5MTQzMTQsImlhdCI6MTczMDkxMDcxNCwidmVyc2lvbiI6MiwianRpIjoiZWQwOGNkNTctMzk4Mi00M2IyLWE0NTItY2I2ZWQ5ZjJiZDU0IiwiY2xpZW50X2lkIjoiM2s4OWM1YTNkOXNsaXY0MDVpZm9naDB1aTMifQ.Ph2h-PCaY7YiRlHFoB88RWCf61IsWYAUpuA4lZIgonVYpG2zftHJrYM__Ff7zOenlRulmVl5ZxTW4QHl1j8pkFBv2V1a_T3rQutFeiYhfGqXOi3BWiF-CNNVHtL_Db5NtWaoIVhB5EflQ1U22ClS4KYZE3x5oXsv4J49oq_a3JsjegHESnS34rfwhnnbL9IOJK1rY6XggrE7GOH6Rat2HbiSWFjzjp3yORApV4PTYz-TyH617ao1D1Z0KW48IYm5azIS3ukJ7abpjmjrf_032gkvkLppcCv6b7EDlFntx2VhnvMmPlO9_Z13Exujk-SArjParyV3TAgTYcHQns9_dA', 'Content-Type': 'application/json'}</msg>
 <arg>Headers set: ${HEADERS}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-11-06T16:24:09.704778" elapsed="0.000189"/>
+<status status="PASS" start="2024-11-06T16:31:54.789042" elapsed="0.000200"/>
 </kw>
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2024-11-06T16:24:09.705300" level="INFO">Creating Session using : alias=api_session, url=None, headers={'Authorization': 'Bearer eyJraWQiOiJWNzJuV1ZnaEo5bFhPK0R6cmNMS3pnbGNqT0RnM0psckpoN0hhMUN0XC9kWT0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIzazg5YzVhM2Q5c2xpdjQwNWlmb2doMHVpMyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY3VzdG9tLWNsYWltc1wvdG91ciBjdXN0b20tY2xhaW1zXC9ib29raW5nIiwiYXV0aF90aW1lIjoxNzMwOTEwMjQ5LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtY2VudHJhbC0xLmFtYXpvbmF3cy5jb21cL2V1LWNlbnRyYWwtMV9uRnQ5eEk0SVAiLCJleHAiOjE3MzA5MTM4NDksImlhdCI6MTczMDkxMDI0OSwidmVyc2lvbiI6MiwianRpIjoiMTNlMjk3NjMtYzQ1MS00Y2YwLWFlZjgtOTBlN2RlMzM3NDE4IiwiY2xpZW50X2lkIjoiM2s4OWM1YTNkOXNsaXY0MDVpZm9naDB1aTMifQ.VyiPUnHs6Hf2HRd_cftcaouFIPfnTk9X6lIIn4jnqr919F0tsmhjaNbKFLHTVl7J3Vh9kBCin1e-kB1f4ea7zmU7LGza1zdenl6feVF9SDCpXTXYqv58FFd6cvU9WOy7_dPVa0mUMH9nmg803v2oZO3O8Y27SRXCpDVd39b7ZZ3oqcjYQw4Ff3rCTGTaYMR96tWry45uoNhps6KCE5cGkGXfhv_U_QJ9euA_qWgjkT0Ix7Qq7q17wcLFmcL95RXcB6o7pE3VXnOVs5jRPdui2L9r9P03f89eGmOErZliJFGScQjO6prx7dOScNrwdTwNmEoIzK1qcRLmGXj8QVP6bw', 'Content-Type': 'application/json'},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2024-11-06T16:31:54.789639" level="INFO">Creating Session using : alias=api_session, url=None, headers={'Authorization': 'Bearer eyJraWQiOiJWNzJuV1ZnaEo5bFhPK0R6cmNMS3pnbGNqT0RnM0psckpoN0hhMUN0XC9kWT0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIzazg5YzVhM2Q5c2xpdjQwNWlmb2doMHVpMyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY3VzdG9tLWNsYWltc1wvdG91ciBjdXN0b20tY2xhaW1zXC9ib29raW5nIiwiYXV0aF90aW1lIjoxNzMwOTEwNzE0LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtY2VudHJhbC0xLmFtYXpvbmF3cy5jb21cL2V1LWNlbnRyYWwtMV9uRnQ5eEk0SVAiLCJleHAiOjE3MzA5MTQzMTQsImlhdCI6MTczMDkxMDcxNCwidmVyc2lvbiI6MiwianRpIjoiZWQwOGNkNTctMzk4Mi00M2IyLWE0NTItY2I2ZWQ5ZjJiZDU0IiwiY2xpZW50X2lkIjoiM2s4OWM1YTNkOXNsaXY0MDVpZm9naDB1aTMifQ.Ph2h-PCaY7YiRlHFoB88RWCf61IsWYAUpuA4lZIgonVYpG2zftHJrYM__Ff7zOenlRulmVl5ZxTW4QHl1j8pkFBv2V1a_T3rQutFeiYhfGqXOi3BWiF-CNNVHtL_Db5NtWaoIVhB5EflQ1U22ClS4KYZE3x5oXsv4J49oq_a3JsjegHESnS34rfwhnnbL9IOJK1rY6XggrE7GOH6Rat2HbiSWFjzjp3yORApV4PTYz-TyH617ao1D1Z0KW48IYm5azIS3ukJ7abpjmjrf_032gkvkLppcCv6b7EDlFntx2VhnvMmPlO9_Z13Exujk-SArjParyV3TAgTYcHQns9_dA', 'Content-Type': 'application/json'},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
 <arg>api_session</arg>
 <arg>${BASE_URL}</arg>
 <arg>headers=${HEADERS}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2024-11-06T16:24:09.705073" elapsed="0.000405"/>
+<status status="PASS" start="2024-11-06T16:31:54.789369" elapsed="0.000451"/>
 </kw>
-<status status="PASS" start="2024-11-06T16:24:09.296332" elapsed="0.409223"/>
+<status status="PASS" start="2024-11-06T16:31:54.209132" elapsed="0.580768"/>
 </kw>
 <test id="s1-t1" name="Scenario 1: Verify /tours endpoint is returning correct status code" line="8">
 <kw name="Given User gets tours details from /tours endpoint" owner="keywords">
 <kw name="GET On Session" owner="RequestsLibrary">
-<msg time="2024-11-06T16:24:09.706549" level="FAIL">AttributeError: 'NoneType' object has no attribute 'endswith'</msg>
+<msg time="2024-11-06T16:31:54.790905" level="FAIL">AttributeError: 'NoneType' object has no attribute 'endswith'</msg>
 <var>${response}</var>
 <arg>api_session</arg>
 <arg>/v1/tours</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<status status="FAIL" start="2024-11-06T16:24:09.706379" elapsed="0.000546">AttributeError: 'NoneType' object has no attribute 'endswith'</status>
+<status status="FAIL" start="2024-11-06T16:31:54.790732" elapsed="0.000549">AttributeError: 'NoneType' object has no attribute 'endswith'</status>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
 <arg>${response.status_code}</arg>
 <arg>200</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="NOT RUN" start="2024-11-06T16:24:09.707057" elapsed="0.000023"/>
+<status status="NOT RUN" start="2024-11-06T16:31:54.791418" elapsed="0.000024"/>
 </kw>
 <kw name="Set Test Variable" owner="BuiltIn">
 <arg>${response}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<status status="NOT RUN" start="2024-11-06T16:24:09.707190" elapsed="0.000018"/>
+<status status="NOT RUN" start="2024-11-06T16:31:54.791552" elapsed="0.000018"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
 <arg>Response: ${response.text}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2024-11-06T16:24:09.707303" elapsed="0.000017"/>
+<status status="NOT RUN" start="2024-11-06T16:31:54.791669" elapsed="0.000017"/>
 </kw>
-<status status="FAIL" start="2024-11-06T16:24:09.706132" elapsed="0.001286">AttributeError: 'NoneType' object has no attribute 'endswith'</status>
+<status status="FAIL" start="2024-11-06T16:31:54.790482" elapsed="0.001306">AttributeError: 'NoneType' object has no attribute 'endswith'</status>
 </kw>
 <kw name="Then Response is with expected value" owner="keywords">
-<status status="NOT RUN" start="2024-11-06T16:24:09.707597" elapsed="0.000023"/>
+<status status="NOT RUN" start="2024-11-06T16:31:54.791966" elapsed="0.000024"/>
 </kw>
-<status status="FAIL" start="2024-11-06T16:24:09.705637" elapsed="0.002114">AttributeError: 'NoneType' object has no attribute 'endswith'</status>
+<status status="FAIL" start="2024-11-06T16:31:54.789985" elapsed="0.002141">AttributeError: 'NoneType' object has no attribute 'endswith'</status>
 </test>
 <test id="s1-t2" name="Scenario 2: Retrieve details and optional services of first selected tour" line="12">
 <kw name="Given User gets tours details from /tours endpoint" owner="keywords">
 <kw name="GET On Session" owner="RequestsLibrary">
-<msg time="2024-11-06T16:24:09.709051" level="FAIL">AttributeError: 'NoneType' object has no attribute 'endswith'</msg>
+<msg time="2024-11-06T16:31:54.793447" level="FAIL">AttributeError: 'NoneType' object has no attribute 'endswith'</msg>
 <var>${response}</var>
 <arg>api_session</arg>
 <arg>/v1/tours</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<status status="FAIL" start="2024-11-06T16:24:09.708914" elapsed="0.000243">AttributeError: 'NoneType' object has no attribute 'endswith'</status>
+<status status="FAIL" start="2024-11-06T16:31:54.793307" elapsed="0.000253">AttributeError: 'NoneType' object has no attribute 'endswith'</status>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
 <arg>${response.status_code}</arg>
 <arg>200</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="NOT RUN" start="2024-11-06T16:24:09.709280" elapsed="0.000020"/>
+<status status="NOT RUN" start="2024-11-06T16:31:54.793686" elapsed="0.000021"/>
 </kw>
 <kw name="Set Test Variable" owner="BuiltIn">
 <arg>${response}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<status status="NOT RUN" start="2024-11-06T16:24:09.709464" elapsed="0.000020"/>
+<status status="NOT RUN" start="2024-11-06T16:31:54.793860" elapsed="0.000020"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
 <arg>Response: ${response.text}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2024-11-06T16:24:09.709585" elapsed="0.000017"/>
+<status status="NOT RUN" start="2024-11-06T16:31:54.793981" elapsed="0.000018"/>
 </kw>
-<status status="FAIL" start="2024-11-06T16:24:09.708584" elapsed="0.001099">AttributeError: 'NoneType' object has no attribute 'endswith'</status>
+<status status="FAIL" start="2024-11-06T16:31:54.792981" elapsed="0.001100">AttributeError: 'NoneType' object has no attribute 'endswith'</status>
 </kw>
 <kw name="When I get the tour ID and Option ID" owner="keywords">
 <doc>Makes a GET request to the tours endpoint and verifies the response</doc>
-<status status="NOT RUN" start="2024-11-06T16:24:09.709893" elapsed="0.000024"/>
+<status status="NOT RUN" start="2024-11-06T16:31:54.794295" elapsed="0.000023"/>
 </kw>
 <kw name="And I send tour ID and Option ID" owner="keywords">
-<status status="NOT RUN" start="2024-11-06T16:24:09.710044" elapsed="0.000021"/>
+<status status="NOT RUN" start="2024-11-06T16:31:54.794450" elapsed="0.000021"/>
 </kw>
 <kw name="Then ShoppingCartReference is generated" owner="keywords">
-<status status="NOT RUN" start="2024-11-06T16:24:09.710195" elapsed="0.000021"/>
+<status status="NOT RUN" start="2024-11-06T16:31:54.794601" elapsed="0.000022"/>
 </kw>
-<status status="FAIL" start="2024-11-06T16:24:09.707998" elapsed="0.002328">AttributeError: 'NoneType' object has no attribute 'endswith'</status>
+<status status="FAIL" start="2024-11-06T16:31:54.792392" elapsed="0.002343">AttributeError: 'NoneType' object has no attribute 'endswith'</status>
 </test>
 <test id="s1-t3" name="Scenario 3: Verify that cart reference id is generated" line="18">
 <kw name="Given ShoppingCartReference is present as test data" owner="keywords">
 <kw name="Join Path" owner="OperatingSystem">
-<msg time="2024-11-06T16:24:09.711435" level="INFO">${json_path} = /home/runner/work/api-test-robotframework/api-test-robotframework/data/cartReference.json</msg>
+<msg time="2024-11-06T16:31:54.795858" level="INFO">${json_path} = /home/runner/work/api-test-robotframework/api-test-robotframework/data/cartReference.json</msg>
 <var>${json_path}</var>
 <arg>/home/runner/work/api-test-robotframework/api-test-robotframework/keywords</arg>
 <arg>../data/cartReference.json</arg>
 <doc>Joins the given path part(s) to the given base path.</doc>
-<status status="PASS" start="2024-11-06T16:24:09.711280" elapsed="0.000180"/>
+<status status="PASS" start="2024-11-06T16:31:54.795703" elapsed="0.000181"/>
 </kw>
 <kw name="Load Json From File" owner="JSONLibrary">
-<msg time="2024-11-06T16:24:09.711834" level="INFO">${json_content} = {'items': [{'reference': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJ5IjowLCJwIjoiSGlyaW5nIiwidCI6IjdjNjI5ZTcxLWJjZmQtNDUwZS05MmJmLWZhYzM2ZmI2NzkyYSIsIm8iOiI5MjE2ZjkxNi0wZDA5LTQ1NmQtOWQ1Yi1mZGY4NmE0MGI1MT...</msg>
+<msg time="2024-11-06T16:31:54.796266" level="INFO">${json_content} = {'items': [{'reference': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJ5IjowLCJwIjoiSGlyaW5nIiwidCI6IjdjNjI5ZTcxLWJjZmQtNDUwZS05MmJmLWZhYzM2ZmI2NzkyYSIsIm8iOiI5MjE2ZjkxNi0wZDA5LTQ1NmQtOWQ1Yi1mZGY4NmE0MGI1MT...</msg>
 <var>${json_content}</var>
 <arg>${json_path}</arg>
 <doc>Load JSON from file.</doc>
-<status status="PASS" start="2024-11-06T16:24:09.711571" elapsed="0.000290"/>
+<status status="PASS" start="2024-11-06T16:31:54.795998" elapsed="0.000296"/>
 </kw>
 <kw name="Set Test Variable" owner="BuiltIn">
-<msg time="2024-11-06T16:24:09.712198" level="INFO">${json_content} = {'items': [{'reference': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJ5IjowLCJwIjoiSGlyaW5nIiwidCI6IjdjNjI5ZTcxLWJjZmQtNDUwZS05MmJmLWZhYzM2ZmI2NzkyYSIsIm8iOiI5MjE2ZjkxNi0wZDA5LTQ1NmQtOWQ1Yi1mZGY4NmE0MGI1MT...</msg>
+<msg time="2024-11-06T16:31:54.796591" level="INFO">${json_content} = {'items': [{'reference': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJ5IjowLCJwIjoiSGlyaW5nIiwidCI6IjdjNjI5ZTcxLWJjZmQtNDUwZS05MmJmLWZhYzM2ZmI2NzkyYSIsIm8iOiI5MjE2ZjkxNi0wZDA5LTQ1NmQtOWQ1Yi1mZGY4NmE0MGI1MT...</msg>
 <arg>${json_content}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<status status="PASS" start="2024-11-06T16:24:09.711974" elapsed="0.000268"/>
+<status status="PASS" start="2024-11-06T16:31:54.796406" elapsed="0.000225"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${json_content}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-11-06T16:24:09.712352" elapsed="0.000168"/>
+<status status="PASS" start="2024-11-06T16:31:54.796738" elapsed="0.000211"/>
 </kw>
-<status status="PASS" start="2024-11-06T16:24:09.711052" elapsed="0.001555"/>
+<status status="PASS" start="2024-11-06T16:31:54.795476" elapsed="0.001565"/>
 </kw>
 <kw name="When I send booking refereference to cart endpoint" owner="keywords">
 <kw name="POST On Session" owner="RequestsLibrary">
-<msg time="2024-11-06T16:24:09.713413" level="FAIL">AttributeError: 'NoneType' object has no attribute 'endswith'</msg>
+<msg time="2024-11-06T16:31:54.797847" level="FAIL">AttributeError: 'NoneType' object has no attribute 'endswith'</msg>
 <var>${response}</var>
 <arg>api_session</arg>
 <arg>/v1/carts</arg>
 <arg>json=${json_content}</arg>
 <doc>Sends a POST request on a previously created HTTP Session.</doc>
-<status status="FAIL" start="2024-11-06T16:24:09.713131" elapsed="0.000404">AttributeError: 'NoneType' object has no attribute 'endswith'</status>
+<status status="FAIL" start="2024-11-06T16:31:54.797573" elapsed="0.000398">AttributeError: 'NoneType' object has no attribute 'endswith'</status>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
 <arg>${response.status_code}</arg>
 <arg>201</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="NOT RUN" start="2024-11-06T16:24:09.713660" elapsed="0.000019"/>
+<status status="NOT RUN" start="2024-11-06T16:31:54.798100" elapsed="0.000020"/>
 </kw>
 <kw name="Get Value From Json" owner="JSONLibrary">
 <var>${cartId}</var>
 <arg>${response.json()}</arg>
 <arg>$.id</arg>
 <doc>Get Value From JSON using JSONPath</doc>
-<status status="NOT RUN" start="2024-11-06T16:24:09.713778" elapsed="0.000016"/>
+<status status="NOT RUN" start="2024-11-06T16:31:54.798222" elapsed="0.000017"/>
 </kw>
 <kw name="Set Test Variable" owner="BuiltIn">
 <arg>${cartId}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<status status="NOT RUN" start="2024-11-06T16:24:09.713896" elapsed="0.000017"/>
+<status status="NOT RUN" start="2024-11-06T16:31:54.798342" elapsed="0.000017"/>
 </kw>
 <return>
 <value>${cartId}</value>
-<status status="NOT RUN" start="2024-11-06T16:24:09.713957" elapsed="0.000018"/>
+<status status="NOT RUN" start="2024-11-06T16:31:54.798404" elapsed="0.000019"/>
 </return>
-<status status="FAIL" start="2024-11-06T16:24:09.712820" elapsed="0.001238">AttributeError: 'NoneType' object has no attribute 'endswith'</status>
+<status status="FAIL" start="2024-11-06T16:31:54.797256" elapsed="0.001253">AttributeError: 'NoneType' object has no attribute 'endswith'</status>
 </kw>
 <kw name="Then Id with booking cart will be generated" owner="keywords">
-<status status="NOT RUN" start="2024-11-06T16:24:09.714209" elapsed="0.000023"/>
+<status status="NOT RUN" start="2024-11-06T16:31:54.798661" elapsed="0.000023"/>
 </kw>
-<status status="FAIL" start="2024-11-06T16:24:09.710548" elapsed="0.003794">AttributeError: 'NoneType' object has no attribute 'endswith'</status>
+<status status="FAIL" start="2024-11-06T16:31:54.794975" elapsed="0.003822">AttributeError: 'NoneType' object has no attribute 'endswith'</status>
 </test>
-<status status="FAIL" start="2024-11-06T16:24:09.110912" elapsed="0.603939"/>
+<status status="FAIL" start="2024-11-06T16:31:54.033568" elapsed="0.765752"/>
 </suite>
 <statistics>
 <total>
