@@ -38,7 +38,7 @@ jobs:
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
         run: |
           mkdir -p reports
-          robot --outputdir reports tests/lemax-api-e2e-test.robot
+          robot --outputdir reports --log index.html tests/lemax-api-e2e-test.robot
           echo "Robot tests completed."
           ls -la reports/
         continue-on-error: true 
