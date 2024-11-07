@@ -1,3 +1,10 @@
 .venv
 .env
 utils/__pycache__/TokenLibrary.cpython-310.pyc
+.vscode/launch.json
+reports/log.html
+reports/output.xml
+reports/report.html
+results/log.html
+results/output.xml
+results/report.html
